@@ -1,47 +1,40 @@
-# owasp-lab-automator-demo
+# 🧪 OWASP Lab Automator — Demo
 
-🧪 OWASP Lab Automator — Demo | Automates OWASP Top 10 tests
+Scripts that auto-test OWASP Top 10 on a lab target
 
-> **Demo Showcase — Synthetic Data Only** — No personal data used.
+> **Cybersecurity Track — Demo Showcase** | **Real Problem, Synthetic Data**
 
 ## Overview
-Demo project that solves a real problem in **Cybersecurity** track. Built as a portfolio showcase with synthetic demo data.
+**Problem:** OWASP labs require manual repetitive testing
+
+**Solution:** Scripts that auto-test OWASP Top 10 on a lab target This demo proves the engineering approach with synthetic data.
 
 ## Architecture
 ```
-Client → Secure Gateway → Backend API → Database
-        ↓
-   Security Layer (OWASP, Validation, Rate Limit)
+Target → Scanner (SQLi/XSS/SSRF) → Reporter → Dashboard
 ```
 
 ## Tech Stack
-- **Track:** Cybersecurity
-- See `package.json` / `requirements.txt` for full list
+- Python, OWASP, Docker
 
 ## Features
-- Solves real problem with demo data
-- Secure by design (validation, auth, RBAC where applicable)
-- Production-ready structure
+- Auto SQLi/XSS/SSRF checks\n- One-click report\n- Dockerized lab
 
 ## Security
-- Input validation
-- Authentication & Authorization (JWT/RBAC)
-- API security best practices
-- No real secrets — demo only
+- Validation, JWT/RBAC, Rate limiting, No real secrets
 
 ## Screenshots
-![Demo Screenshot](./screenshots/demo.png)
-*Placeholder — add real screenshot*
+![Demo](./screenshots/demo.png)
 
 ## Demo
-Demo data: `demo-data.json` (synthetic)
-Live Demo: `https://kero.10001mb.com/demo/owasp-lab-automator-demo` (placeholder)
+- **Demo Data:** `demo-data.json`
+- **Live:** `https://kero.10001mb.com/demo/owasp-lab-automator-demo` *(placeholder)*
 
 ## Installation
 ```bash
 git clone https://github.com/KeroNaderDev/owasp-lab-automator-demo.git
 cd owasp-lab-automator-demo
-npm install # or pip install -r requirements.txt
+npm install
 cp .env.example .env
 npm run dev
 ```
@@ -49,13 +42,12 @@ npm run dev
 ## Usage
 ```bash
 npm run dev
-# Open http://localhost:3000
 ```
 
 ## What I Learned
-- Building Cybersecurity systems end-to-end
-- Securing APIs and infrastructure
-- Demo-driven portfolio design
+- Cybersecurity end-to-end design
+- Demo vs real data separation
+- Professional portfolio structure
 
 ---
-*Part of **Kero Nader** — Cybersecurity | Full Stack | DevOps | IoT — Track: Cybersecurity*
+*Track: Cybersecurity • Portfolio: [KeroNaderDev](https://github.com/KeroNaderDev)*
